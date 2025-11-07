@@ -1,38 +1,162 @@
-.App {
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header
+{
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(49, 150, 190);
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+main
+{
+  height: 70px;
+}
+.main
+{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+p
+{
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1px;
+}
+button
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer
+{
+  text-align: center;
+  background-color:rgb(49, 150, 190);
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+}
+h1
+{
+  font-size: 20px;
+  color: #fff6f6;
+}
+.inputForm
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+input[type="text"]
+{
+  width: 300px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+input[type="text"]:focus
+{
+  outline: 1px solid rgb(49, 150, 190);
+}
+input[type="text"]::placeholder
+{
+  font-size: 15px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.plus
+{
+  background-color:rgb(49, 150, 190);
+  height: 24px;
+  width: 24px;
+  padding: 4px;
+  color:#fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.plus:focus
+{
+  outline: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.plus:focus,.plus:hover
+{
+  background-color: #ff4343;
+  
+}
+.serachForm
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
-
-.App-link {
-  color: #61dafb;
+section
+{
+  color: #000;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul
+{
+  list-style-type: none;
+}
+li
+{
+  font-size: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 14px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+input[type="checkbox"]
+{
+  width: 30px;
+  height:30px;
+}
+.TrashDelete
+{
+  cursor: pointer;
+  color: rgb(49, 150, 190);
+}
+.TrashDelete:focus,.TrashDelete:hover
+{
+  color: #ff4343;
+  outline: none;
+}
+li:hover,li:focus
+{
+  background-color: rgb(190, 152, 49);
+  color: #fff;
+}
+.EmptyPara
+{
+  font-size: 24px;
+}
+button
+{
+  border: none;
+  background-color: transparent;
+}
+.addLabel
+{
+  position: absolute;
+  margin-left: -99999999px;
 }
