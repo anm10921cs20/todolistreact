@@ -1,13 +1,16 @@
 import React from 'react'
 
-const Search = () => {
+const Search = ({search, setSearch}) => {
   return (
-    <form className='serachForm'>
+    <form className='serachForm' onSubmit={(e) => e.preventDefault()}>
         <input 
             type="text"
-            placeholder='Serach Activity'
+            placeholder='Search Activity'
             id='SearchInput' 
             className='serachInput'
+            role='searchbox'
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
         />
     </form>
   )

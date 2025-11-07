@@ -52,6 +52,8 @@ function App() {
     
   }
 
+  const [search, setSearch] = useState('')
+
 
 
   return (
@@ -63,9 +65,12 @@ function App() {
         setNewItems = {setNewItems}
         handleSubmit = {handleSubmit}
       />
-      <Search />
+      <Search
+        search = {search}
+        setSearch = {setSearch}
+      />
       <Contentmain
-        items={items}
+        items={items.filter(item => ((item.item).toLowerCase()).includes(search.toLowerCase()))}
         handleCheck={handleCheck}
         handleDelete={handleDelete} />
       <Footer 

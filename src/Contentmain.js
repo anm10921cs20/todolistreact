@@ -7,11 +7,10 @@ import ItemsList from './ItemsList';
 
 const Contentmain = ({ items, handleCheck, handleDelete }) => {
 
-    const item = items.length ?? 0;
     return (
         <section>
 
-            {(item.length !== 0) ? (
+            {(items.length !== 0) ? (
                 <ItemsList
                     items={items}
                     handleCheck={handleCheck}
