@@ -21,7 +21,6 @@ const Content = () => {
 
         data.innerHTML = `${hour} : ${minute} : ${second} ${varl}`;
     }
-
     
     const date = new Date().toLocaleDateString();
     setInterval(timer, 1000)
