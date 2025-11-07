@@ -11,7 +11,7 @@ const Contentmain = ({ items, handleCheck, handleDelete }) => {
     return (
         <section>
 
-            {(items.length ?? 0) ? (
+            {(items.length<0 ? 0 : items.length) ? (
                 <ItemsList
                     items={items}
                     handleCheck={handleCheck}
