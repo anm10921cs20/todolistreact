@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Footer = ({length}) => {
+  const valueLength = length.length;
 
   return (
-  <footer>{length} List {length === 1 ? "item" : "items"} </footer>
+  <footer>{valueLength} List {valueLength === 1 ? "item" : "items"} </footer>
   )
 }
 

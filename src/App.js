@@ -69,7 +69,7 @@ function App() {
         handleCheck={handleCheck}
         handleDelete={handleDelete} />
       <Footer 
-      length = {items>0 ? 0 : items.length}/>
+      length = {items}/>
 
     </div>
   );
