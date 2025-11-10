@@ -14,7 +14,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem('todolist')))
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('todolist')) || [])
 
     const addItem = (item) => {
       const id = items.length ? items[items.length -1].id+1 : 1;
